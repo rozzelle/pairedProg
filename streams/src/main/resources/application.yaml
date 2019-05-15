@@ -3,7 +3,7 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: localhost:8080
+          brokers: localhost:9092
       bindings:
         greetings-in:
           destination: greetings
