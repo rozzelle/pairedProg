@@ -15,18 +15,18 @@
     </parent>
 
     <repositories>
-        <repository>
+        <com.groz.kotlin.spring.boot.controller.repository>
             <id>jcenter</id>
             <url>http://jcenter.bintray.com</url>
-        </repository>
-        <repository>
+        </com.groz.kotlin.spring.boot.controller.repository>
+        <com.groz.kotlin.spring.boot.controller.repository>
             <id>kotlin-ktor</id>
             <url>https://dl.bintray.com/kotlin/ktor/</url>
-        </repository>
-        <repository>
+        </com.groz.kotlin.spring.boot.controller.repository>
+        <com.groz.kotlin.spring.boot.controller.repository>
             <id>kotlin-eap</id>
             <url>http://dl.bintray.com/kotlin/kotlin-eap</url>
-        </repository>
+        </com.groz.kotlin.spring.boot.controller.repository>
     </repositories>
 
     <pluginRepositories>
@@ -73,9 +73,9 @@
 
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-test-junit</artifactId>
+            <artifactId>kotlin-com.groz.kotlin.spring.boot.controller.test-junit</artifactId>
             <version>${kotlin.version}</version>
-            <scope>test</scope>
+            <scope>com.groz.kotlin.spring.boot.controller.test</scope>
         </dependency>
 
     </dependencies>
@@ -104,14 +104,14 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>test-compile</id>
+                        <id>com.groz.kotlin.spring.boot.controller.test-compile</id>
                         <goals>
-                            <goal>test-compile</goal>
+                            <goal>com.groz.kotlin.spring.boot.controller.test-compile</goal>
                         </goals>
                         <configuration>
                             <sourceDirs>
-                                <sourceDir>${project.basedir}/src/test/kotlin</sourceDir>
-                                <sourceDir>${project.basedir}/src/test/java</sourceDir>
+                                <sourceDir>${project.basedir}/src/com.groz.kotlin.spring.boot.controller.test/kotlin</sourceDir>
+                                <sourceDir>${project.basedir}/src/com.groz.kotlin.spring.boot.controller.test/java</sourceDir>
                             </sourceDirs>
                             <jvmTarget>${java.version}</jvmTarget>
                         </configuration>
@@ -157,8 +157,8 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>java-test-compile</id>
-                        <phase>test-compile</phase>
+                        <id>java-com.groz.kotlin.spring.boot.controller.test-compile</id>
+                        <phase>com.groz.kotlin.spring.boot.controller.test-compile</phase>
                         <goals>
                             <goal>testCompile</goal>
                         </goals>

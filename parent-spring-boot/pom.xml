@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>parent-spring-boot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>parent-spring-boot</name>
+	<description>Parent for all spring boot modules</description>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>com.groz</groupId>
+		<artifactId>parent-modules</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>${spring.boot.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>${spring.boot.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-com.groz.kotlin.spring.boot.controller.test</artifactId>
+			<version>${spring.boot.version}</version>
+			<scope>com.groz.kotlin.spring.boot.controller.test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<properties>
+		<spring.boot.version>2.1.4.RELEASE</spring.boot.version>
+	</properties>
+</project>

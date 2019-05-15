@@ -13,8 +13,10 @@
     <modules>
         <module>streams</module>
         <module>kotlin-basics</module>
+        <module>kotlin-spring-boot</module>
         <module>parent-java</module>
         <module>parent-kotlin</module>
+        <module>parent-spring-boot</module>
     </modules>
 
 </project>
