@@ -40,6 +40,7 @@
         <webflux.version>2.0.3.RELEASE</webflux.version>
         <lombok.version>1.18.8</lombok.version>
         <springboot.version>2.1.4.RELEASE</springboot.version>
+        <java.version>1.8</java.version>
     </properties>
 
 </project>

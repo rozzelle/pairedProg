@@ -12,7 +12,7 @@
 
     <modules>
         <module>streams</module>
-        <module>kotlin-practice</module>
+        <module>kotlin-basics</module>
         <module>parent-java</module>
         <module>parent-kotlin</module>
     </modules>
