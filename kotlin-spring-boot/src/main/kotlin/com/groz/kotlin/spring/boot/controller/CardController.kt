@@ -12,7 +12,7 @@ import javax.validation.Valid
 class CardController(private val cardRepository: CardRepository) {
 
     @GetMapping()
-    fun getAllArticles(): List<Card> =
+    fun getAlCards(): List<Card> =
             cardRepository.findAll()
 
 
@@ -31,11 +31,11 @@ class CardController(private val cardRepository: CardRepository) {
     @PutMapping("/{id}")
     fun updateCardsById(@PathVariable(value = "id") cardId: Long,
                           @Valid @RequestBody newCard: Card): ResponseEntity<Card> {
-        return cardRepository.findById(cardId).map { existingArticle ->
-            val updatedArticle: Card = existingArticle
+        return cardRepository.findById(cardId).map { existingCard ->
+            val updatedCard: Card = existingCard
                     .copy(suit = newCard.suit, name = newCard.name)
 
-            ResponseEntity.ok().body(cardRepository.save(updatedArticle))
+            ResponseEntity.ok().body(cardRepository.save(updatedCard))
         }.orElse(ResponseEntity.notFound().build())
 
     }
